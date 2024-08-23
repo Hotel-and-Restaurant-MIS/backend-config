@@ -4,9 +4,10 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: "${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE}"
     initialInstanceInfoReplicationIntervalSeconds: 5
     registryFetchIntervalSeconds: 5
   instance:
+    preferIpAddress: true
     leaseRenewalIntervalInSeconds: 5
     leaseExpirationDurationInSeconds: 5
