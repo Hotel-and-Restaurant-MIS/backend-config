@@ -8,5 +8,6 @@ eureka:
     initialInstanceInfoReplicationIntervalSeconds: 5
     registryFetchIntervalSeconds: 5
   instance:
+    preferIpAddress: true
     leaseRenewalIntervalInSeconds: 5
     leaseExpirationDurationInSeconds: 5
