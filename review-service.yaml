@@ -1,11 +1,2 @@
 server:
   port: 8081
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: "${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE}"
-    initialInstanceInfoReplicationIntervalSeconds: 5
-    registryFetchIntervalSeconds: 5
-  instance:
-    leaseRenewalIntervalInSeconds: 5
-    leaseExpirationDurationInSeconds: 5
